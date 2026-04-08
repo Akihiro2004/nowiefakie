@@ -29,7 +29,7 @@ export default function LeaderboardPage() {
           setEntries(leaderboardData);
         }
       })
-      .catch(() => setError("Gagal muat leaderboard. Cek internet lo ya."))
+      .catch(() => setError("Gagal muat leaderboard. Cek internet kamu ya."))
       .finally(() => setLoading(false));
   }, [quizId]);
 
@@ -93,7 +93,7 @@ export default function LeaderboardPage() {
             >
               Belum ada yang main nih!{" "}
               <br />
-              Share linknya ke temen-temen lo dulu 👇
+              Share linknya ke temen-temen kamu dulu 👇
             </div>
           )}
         </div>
@@ -221,7 +221,7 @@ export default function LeaderboardPage() {
             </a>
             <a
               href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                `Gue baru aja ngerjain kuis punya ${quiz.creatorName} di NowieFakie! Bisa ngalahin skor gue?`
+                `Aku baru aja ngerjain kuis punya ${quiz.creatorName} di NowieFakie! Bisa ngalahin skor aku?`
               )}&url=${encodeURIComponent(shareUrl)}`}
               target="_blank"
               rel="noopener noreferrer"

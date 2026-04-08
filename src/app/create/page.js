@@ -32,7 +32,7 @@ export default function CreateQuizPage() {
   const handleNameSubmit = (e) => {
     e.preventDefault();
     const name = creatorName.trim();
-    if (!name) return setError("Isi nama lo dulu dong!");
+    if (!name) return setError("Isi nama kamu dulu dong!");
     if (name.length > 40) return setError("Nama terlalu panjang (maks 40 karakter).");
     setError("");
     setStep(STEPS.QUIZ);
@@ -83,7 +83,7 @@ export default function CreateQuizPage() {
       setStep(STEPS.SHARE);
     } catch (err) {
       console.error(err);
-      setError("Aduh, ada yang error. Cek koneksi lo terus coba lagi ya.");
+      setError("Aduh, ada yang error. Cek koneksi kamu terus coba lagi ya.");
     } finally {
       setLoading(false);
     }
@@ -105,7 +105,7 @@ export default function CreateQuizPage() {
           <div className="text-center mb-8">
             <span className="text-5xl mb-4 block animate-float">👋</span>
             <h1 className="text-3xl font-extrabold mb-2">
-              Buat Kuis Lo
+              Buat Kuis Kamu
             </h1>
             <p style={{ color: "var(--text-secondary)" }}>
               Pertama, kenalin dulu siapa yang bikin kuis ini.
@@ -119,7 +119,7 @@ export default function CreateQuizPage() {
                 className="block text-sm font-semibold mb-2"
                 style={{ color: "var(--text-secondary)" }}
               >
-                Nama lo
+                Nama kamu
               </label>
               <input
                 id="creator-name"
@@ -147,9 +147,9 @@ export default function CreateQuizPage() {
             </button>
 
             <p className="text-center text-sm" style={{ color: "var(--text-hint)" }}>
-              Lo bakal jawab 10 pertanyaan tentang diri lo sendiri.{" "}
+              Kamu bakal jawab 10 pertanyaan tentang diri kamu sendiri.{" "}
               <br />
-              Nanti temen lo yang nebak jawaban lo!
+              Nanti temen kamu yang nebak jawaban kamu!
             </p>
           </form>
         </div>
@@ -283,7 +283,7 @@ export default function CreateQuizPage() {
     <PageShell>
       <div className="card p-8 sm:p-10 w-full max-w-lg mx-auto text-center animate-scale-in">
         <div className="text-6xl mb-4 animate-float">🎉</div>
-        <h1 className="text-3xl font-extrabold mb-2">Kuis lo udah live!</h1>
+        <h1 className="text-3xl font-extrabold mb-2">Kuis kamu udah live!</h1>
         <p className="mb-8" style={{ color: "var(--text-secondary)" }}>
           Share link ini ke temen-temen dan liat siapa yang beneran kenal{" "}
           <span className="font-semibold" style={{ color: "var(--brand-blue)" }}>
@@ -352,7 +352,7 @@ export default function CreateQuizPage() {
           className="mt-6 text-xs"
           style={{ color: "var(--text-hint)" }}
         >
-          Tip: Simpen link ini! Itu satu-satunya cara akses leaderboard lo.
+          Tip: Simpen link ini! Itu satu-satunya cara akses leaderboard kamu.
         </p>
       </div>
     </PageShell>

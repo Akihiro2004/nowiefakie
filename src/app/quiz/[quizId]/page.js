@@ -44,7 +44,7 @@ export default function TakeQuizPage() {
   const handleNameSubmit = (e) => {
     e.preventDefault();
     const name = playerName.trim();
-    if (!name) return setError("Tulis nama lo dulu dong!");
+    if (!name) return setError("Tulis nama kamu dulu dong!");
     if (name.length > 40) return setError("Nama terlalu panjang (maks 40 karakter).");
     setError("");
     setStep(STEPS.QUIZ);
@@ -98,7 +98,7 @@ export default function TakeQuizPage() {
     } catch (err) {
       console.error(err);
       setStep(STEPS.QUIZ);
-      setError("Gagal kirim. Cek koneksi internet lo ya.");
+      setError("Gagal kirim. Cek koneksi internet kamu ya.");
     }
   };
 
@@ -135,7 +135,7 @@ export default function TakeQuizPage() {
       <PageShell>
         <div className="card p-12 flex flex-col items-center gap-4">
           <div className="text-5xl animate-float">⏳</div>
-          <h2 className="text-xl font-bold">Lagi ngitung nilai lo...</h2>
+          <h2 className="text-xl font-bold">Lagi ngitung nilai kamu...</h2>
           <p style={{ color: "var(--text-secondary)" }}>Sebentar ya!</p>
         </div>
       </PageShell>
@@ -165,7 +165,7 @@ export default function TakeQuizPage() {
           <p
             className="text-center text-lg font-semibold mb-2"
           >
-            Seberapa kenal lo sama{" "}
+            Seberapa kenal kamu sama{" "}
             <span style={{ color: "var(--brand-blue)" }}>{quiz.creatorName}</span>?
           </p>
           <p
@@ -183,13 +183,13 @@ export default function TakeQuizPage() {
                 className="block text-sm font-semibold mb-2"
                 style={{ color: "var(--text-secondary)" }}
               >
-                Nama lo
+                Nama kamu
               </label>
               <input
                 id="player-name"
                 type="text"
                 className="input-field"
-                placeholder="Nama lo siapa?"
+                placeholder="Nama kamu siapa?"
                 value={playerName}
                 onChange={(e) => {
                   setPlayerName(e.target.value);

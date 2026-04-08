@@ -1,6 +1,6 @@
-# NowieFakie
+﻿# NowieFakie
 
-Aplikasi kuis web buat ngetes seberapa kenal temen-temen lo sama lo. Lo jawab 10 pertanyaan tentang diri sendiri, share linknya ke temen, terus liat siapa yang paling kenal lo di leaderboard.
+Aplikasi kuis web buat ngetes seberapa kenal temen-temen kamu sama kamu. Kamu jawab 10 pertanyaan tentang diri sendiri, share linknya ke temen, terus liat siapa yang paling kenal kamu di leaderboard.
 
 ## Tech Stack
 
@@ -57,9 +57,9 @@ npm start
 ## Alur Penggunaan
 
 1. Buka halaman utama, klik tombol buat kuis
-2. Isi nama lo, jawab 10 pertanyaan tentang diri sendiri
+2. Isi nama kamu, jawab 10 pertanyaan tentang diri sendiri
 3. Copy link yang keluar dan share ke temen-temen
-4. Temen lo buka link tersebut, isi namanya, dan nebak jawaban lo
+4. Temen kamu buka link tersebut, isi namanya, dan nebak jawaban kamu
 5. Setelah selesai, mereka bisa liat skor dan rekap jawaban
 6. Cek leaderboard untuk liat ranking semua yang udah ikutan
 

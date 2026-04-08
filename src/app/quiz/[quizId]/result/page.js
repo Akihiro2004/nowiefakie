@@ -46,7 +46,7 @@ export default function ResultPage() {
           setAttempt(attemptData);
         }
       })
-      .catch(() => setError("Gagal muat hasil. Cek internet lo ya."))
+      .catch(() => setError("Gagal muat hasil. Cek internet kamu ya."))
       .finally(() => setLoading(false));
   }, [quizId, attemptId]);
 
@@ -91,7 +91,7 @@ export default function ResultPage() {
       <PageShell>
         <div className="card p-12 flex flex-col items-center gap-4">
           <LoadingSpinner />
-          <p style={{ color: "var(--text-secondary)" }}>Lagi muat hasil lo...</p>
+          <p style={{ color: "var(--text-secondary)" }}>Lagi muat hasil kamu...</p>
         </div>
       </PageShell>
     );
@@ -277,7 +277,7 @@ export default function ResultPage() {
                         </span>
                         <span className="font-medium">{q.options[playerAns]}</span>
                         <span className="ml-auto text-xs font-semibold shrink-0">
-                          ✗ Jawaban lo
+                          ✗ Jawaban kamu
                         </span>
                       </div>
                     )}

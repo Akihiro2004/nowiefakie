@@ -20,15 +20,15 @@ export default function Home() {
           className="animate-fade-up delay-100 text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight mb-5 max-w-3xl"
           style={{ letterSpacing: "-0.02em" }}
         >
-          Emangnya Temen Lo{" "}
-          <span className="gradient-text">Beneran Kenal</span> Lo?
+          Emangnya Temen Kamu{" "}
+          <span className="gradient-text">Beneran Kenal</span> Kamu?
         </h1>
 
         <p
           className="animate-fade-up delay-200 text-xl md:text-2xl max-w-xl mb-10 leading-relaxed"
           style={{ color: "var(--text-secondary)" }}
         >
-          Buat kuis personal, share linknya, dan ranking semua temen lo.
+          Buat kuis personal, share linknya, dan ranking semua temen kamu.
           Ketahuan deh mana yang{" "}
           <span className="font-semibold" style={{ color: "var(--brand-blue)" }}>
             asli
@@ -71,8 +71,8 @@ export default function Home() {
               {
                 step: "01",
                 emoji: "✍️",
-                title: "Buat Kuis Lo",
-                desc: "Jawab 10 pertanyaan tentang diri lo. Nanti temen-temen lo yang nebak jawabannya.",
+                title: "Buat Kuis Kamu",
+                desc: "Jawab 10 pertanyaan tentang diri kamu. Nanti temen-temen kamu yang nebak jawabannya.",
                 color: "var(--brand-blue)",
                 bg: "var(--brand-blue-light)",
               },
@@ -80,7 +80,7 @@ export default function Home() {
                 step: "02",
                 emoji: "🔗",
                 title: "Share Linknya",
-                desc: "Kirim link kuis lo ke temen via WhatsApp, Instagram, atau terserah lo.",
+                desc: "Kirim link kuis kamu ke temen via WhatsApp, Instagram, atau terserah kamu.",
                 color: "var(--brand-purple)",
                 bg: "var(--brand-purple-light)",
               },
@@ -88,7 +88,7 @@ export default function Home() {
                 step: "03",
                 emoji: "🏆",
                 title: "Cek Leaderboard",
-                desc: "Liat siapa yang dapet nilai tertinggi. Yang beneran kenal lo bakal keliatan.",
+                desc: "Liat siapa yang dapet nilai tertinggi. Yang beneran kenal kamu bakal keliatan.",
                 color: "var(--brand-green)",
                 bg: "var(--brand-green-light)",
               },
@@ -125,7 +125,7 @@ export default function Home() {
       >
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl font-extrabold mb-4" style={{ letterSpacing: "-0.02em" }}>
-            Nilai Lo Ngomong Apa? 🎯
+            Nilai Kamu Ngomong Apa? 🎯
           </h2>
           <p className="text-xl mb-12 max-w-lg mx-auto" style={{ opacity: 0.85 }}>
             Setiap temen dapet nilai dari 10. Ini artinya tiap skor:
@@ -160,10 +160,10 @@ export default function Home() {
         <div className="max-w-2xl mx-auto">
           <div className="text-6xl mb-6 animate-float">🤝</div>
           <h2 className="text-4xl font-extrabold mb-4" style={{ letterSpacing: "-0.02em" }}>
-            Siap nguji temen lo?
+            Siap nguji temen kamu?
           </h2>
           <p className="text-xl mb-10" style={{ color: "var(--text-secondary)" }}>
-            Cuma butuh 2 menit buat bikin kuis. Temen lo yang ngerjain sisanya.
+            Cuma butuh 2 menit buat bikin kuis. Temen kamu yang ngerjain sisanya.
           </p>
           <Link href="/create" className="btn-primary text-lg px-12 py-4">
             Yuk Mulai 🎉

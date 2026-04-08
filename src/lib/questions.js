@@ -105,9 +105,9 @@ export function getScoreMessage(score) {
   if (score === 10)
     return { emoji: "🔮", title: "Baca Pikiran!", message: "Kalian kayak punya otak yang sama. Gila sih." };
   if (score >= 8)
-    return { emoji: "🏆", title: "Teman Sejati!", message: "Lo tau banget dia dalam-dalamnya. Langka banget nih." };
+    return { emoji: "🏆", title: "Teman Sejati!", message: "Kamu tau banget dia dalam-dalamnya. Langka banget nih." };
   if (score >= 6)
-    return { emoji: "😊", title: "Lumayan!", message: "Lo cukup perhatian kok. Solid." };
+    return { emoji: "😊", title: "Lumayan!", message: "Kamu cukup perhatian kok. Solid." };
   if (score >= 4)
     return { emoji: "👀", title: "Hmm...", message: "Kayaknya perlu lebih sering ngobrol deh." };
   if (score >= 2)

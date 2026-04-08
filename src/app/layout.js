@@ -1,4 +1,4 @@
-import { Poppins } from "next/font/google";
+﻿import { Poppins } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -9,12 +9,12 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "NowieFakie - Emangnya Temen Lo Kenal Lo?",
+  title: "NowieFakie - Emangnya Temen Kamu Kenal Kamu?",
   description:
     "Buat kuis personal, share ke temen, dan cari tau siapa yang beneran kenal kamu. Ketahuan deh mana yang fake!",
   openGraph: {
-    title: "NowieFakie - Emangnya Temen Lo Kenal Lo?",
-    description: "Buat kuis, share, dan ketahuin mana temen fake lo 👀",
+    title: "NowieFakie - Emangnya Temen Kamu Kenal Kamu?",
+    description: "Buat kuis, share, dan ketahuin mana temen fake kamu 👀",
   },
 };
 
