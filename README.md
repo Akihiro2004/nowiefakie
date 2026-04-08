@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NowieFakie
 
-## Getting Started
+Aplikasi kuis web buat ngetes seberapa kenal temen-temen lo sama lo. Lo jawab 10 pertanyaan tentang diri sendiri, share linknya ke temen, terus liat siapa yang paling kenal lo di leaderboard.
 
-First, run the development server:
+## Tech Stack
+
+- Next.js (App Router)
+- Tailwind CSS v4
+- Firebase Firestore
+
+## Cara Setup
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Konfigurasi Firebase
+
+Buat project baru di Firebase Console, aktifin Firestore Database, lalu bikin file `.env.local` di root project:
+
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=isi_di_sini
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=isi_di_sini
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=isi_di_sini
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=isi_di_sini
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=isi_di_sini
+NEXT_PUBLIC_FIREBASE_APP_ID=isi_di_sini
+```
+
+### 3. Jalanin development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka `http://localhost:3000` di browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Build Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Halaman
 
-To learn more about Next.js, take a look at the following resources:
+| Route | Fungsi |
+| --- | --- |
+| `/` | Landing page |
+| `/create` | Bikin kuis baru |
+| `/quiz/[quizId]` | Temen ngerjain kuis |
+| `/quiz/[quizId]/result` | Lihat hasil kuis |
+| `/quiz/[quizId]/leaderboard` | Ranking semua peserta |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Alur Penggunaan
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Buka halaman utama, klik tombol buat kuis
+2. Isi nama lo, jawab 10 pertanyaan tentang diri sendiri
+3. Copy link yang keluar dan share ke temen-temen
+4. Temen lo buka link tersebut, isi namanya, dan nebak jawaban lo
+5. Setelah selesai, mereka bisa liat skor dan rekap jawaban
+6. Cek leaderboard untuk liat ranking semua yang udah ikutan
 
-## Deploy on Vercel
+## Struktur Project
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+  app/
+    page.js               # Landing page
+    layout.js             # Root layout
+    globals.css           # Global styles dan design tokens
+    create/
+      page.js             # Halaman bikin kuis
+    quiz/[quizId]/
+      page.js             # Halaman ngerjain kuis
+      result/
+        page.js           # Halaman hasil
+      leaderboard/
+        page.js           # Leaderboard
+  lib/
+    firebase.js           # Inisialisasi Firebase
+    firestore.js          # Fungsi database
+    questions.js          # Daftar pertanyaan
+```
