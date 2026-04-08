@@ -61,12 +61,12 @@
   },
   {
     id: "q7",
-    question: "Love language aku itu apa? 💕",
+    question: "Kalau lagi butuh dukungan, aku lebih suka gimana? 🤝",
     options: [
-      "Kata-kata yang bikin meleleh",
-      "Quality time bareng",
-      "Dibantu tanpa harus minta",
-      "Dikasih hadiah yang thoughtful",
+      "Diajak ngobrol dan didengarkan",
+      "Ditemenin aja, gak harus ngomong apa-apa",
+      "Dibantu beresin masalahnya langsung",
+      "Dikasih waktu sendiri dulu",
     ],
   },
   {
